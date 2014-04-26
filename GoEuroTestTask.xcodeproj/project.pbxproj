@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A6C271BB190BBC9B001D253E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C271BA190BBC9B001D253E /* Foundation.framework */; };
+		A6C271BD190BBC9B001D253E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C271BC190BBC9B001D253E /* CoreGraphics.framework */; };
+		A6C271BF190BBC9B001D253E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C271BE190BBC9B001D253E /* UIKit.framework */; };
+		A6C271C5190BBC9B001D253E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A6C271C3190BBC9B001D253E /* InfoPlist.strings */; };
+		A6C271C7190BBC9B001D253E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C271C6190BBC9B001D253E /* main.m */; };
+		A6C271CB190BBC9B001D253E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C271CA190BBC9B001D253E /* AppDelegate.m */; };
+		A6C271CE190BBC9B001D253E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6C271CC190BBC9B001D253E /* Main_iPhone.storyboard */; };
+		A6C271D1190BBC9B001D253E /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6C271CF190BBC9B001D253E /* Main_iPad.storyboard */; };
+		A6C271D6190BBC9B001D253E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C271D5190BBC9B001D253E /* Images.xcassets */; };
+		A6C2722A190BBD1B001D253E /* RKErrorMessage+MappingDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C271FC190BBD1B001D253E /* RKErrorMessage+MappingDescriptor.m */; };
+		A6C27234190BBD1B001D253E /* GoEuroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C2721D190BBD1B001D253E /* GoEuroModel.m */; };
+		A6C27235190BBD1B001D253E /* ConnectionManager+CoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C27220190BBD1B001D253E /* ConnectionManager+CoreData.m */; };
+		A6C27236190BBD1B001D253E /* ConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C27222190BBD1B001D253E /* ConnectionManager.m */; };
+		A6C27237190BBD1B001D253E /* database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A6C27225190BBD1B001D253E /* database.xcdatamodeld */; };
+		A6C2723B190BCE64001D253E /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C2723A190BCE64001D253E /* SearchViewController.m */; };
+		A6C27240190BEC6C001D253E /* PersistentData.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C2723F190BEC6C001D253E /* PersistentData.m */; };
+		A6C27243190BEFD1001D253E /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C27242190BEFD1001D253E /* Place.m */; };
+		ED0BB477DD6746C7B0F383F1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F6CF8E3A2344BFB9D0728BC /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		33EB4BA8BB4D4A139ADA0CDE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		4F6CF8E3A2344BFB9D0728BC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6C271B7190BBC9B001D253E /* GoEuroTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoEuroTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6C271BA190BBC9B001D253E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A6C271BC190BBC9B001D253E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A6C271BE190BBC9B001D253E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A6C271C2190BBC9B001D253E /* GoEuroTestTask-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoEuroTestTask-Info.plist"; sourceTree = "<group>"; };
+		A6C271C4190BBC9B001D253E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A6C271C6190BBC9B001D253E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A6C271C8190BBC9B001D253E /* GoEuroTestTask-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoEuroTestTask-Prefix.pch"; sourceTree = "<group>"; };
+		A6C271C9190BBC9B001D253E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A6C271CA190BBC9B001D253E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A6C271CD190BBC9B001D253E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		A6C271D0190BBC9B001D253E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		A6C271D5190BBC9B001D253E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A6C271F5190BBD1B001D253E /* NSManagedObjectContext+RestKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+RestKit.h"; sourceTree = "<group>"; };
+		A6C271FB190BBD1B001D253E /* RKErrorMessage+MappingDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RKErrorMessage+MappingDescriptor.h"; sourceTree = "<group>"; };
+		A6C271FC190BBD1B001D253E /* RKErrorMessage+MappingDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RKErrorMessage+MappingDescriptor.m"; sourceTree = "<group>"; };
+		A6C2721C190BBD1B001D253E /* GoEuroModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoEuroModel.h; sourceTree = "<group>"; };
+		A6C2721D190BBD1B001D253E /* GoEuroModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoEuroModel.m; sourceTree = "<group>"; };
+		A6C2721F190BBD1B001D253E /* ConnectionManager+CoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ConnectionManager+CoreData.h"; sourceTree = "<group>"; };
+		A6C27220190BBD1B001D253E /* ConnectionManager+CoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ConnectionManager+CoreData.m"; sourceTree = "<group>"; };
+		A6C27221190BBD1B001D253E /* ConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionManager.h; sourceTree = "<group>"; };
+		A6C27222190BBD1B001D253E /* ConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionManager.m; sourceTree = "<group>"; };
+		A6C27226190BBD1B001D253E /* database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = database.xcdatamodel; sourceTree = "<group>"; };
+		A6C27239190BCE64001D253E /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		A6C2723A190BCE64001D253E /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		A6C2723D190BDC57001D253E /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
+		A6C2723E190BEC6C001D253E /* PersistentData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistentData.h; sourceTree = "<group>"; };
+		A6C2723F190BEC6C001D253E /* PersistentData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersistentData.m; sourceTree = "<group>"; };
+		A6C27241190BEFD1001D253E /* Place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
+		A6C27242190BEFD1001D253E /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Place.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6C271B4190BBC9B001D253E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6C271BD190BBC9B001D253E /* CoreGraphics.framework in Frameworks */,
+				A6C271BF190BBC9B001D253E /* UIKit.framework in Frameworks */,
+				A6C271BB190BBC9B001D253E /* Foundation.framework in Frameworks */,
+				ED0BB477DD6746C7B0F383F1 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6C271AE190BBC9B001D253E = {
+			isa = PBXGroup;
+			children = (
+				A6C271C0190BBC9B001D253E /* GoEuroTestTask */,
+				A6C271B9190BBC9B001D253E /* Frameworks */,
+				A6C271B8190BBC9B001D253E /* Products */,
+				33EB4BA8BB4D4A139ADA0CDE /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		A6C271B8190BBC9B001D253E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6C271B7190BBC9B001D253E /* GoEuroTestTask.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6C271B9190BBC9B001D253E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6C271BA190BBC9B001D253E /* Foundation.framework */,
+				A6C271BC190BBC9B001D253E /* CoreGraphics.framework */,
+				A6C271BE190BBC9B001D253E /* UIKit.framework */,
+				4F6CF8E3A2344BFB9D0728BC /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6C271C0190BBC9B001D253E /* GoEuroTestTask */ = {
+			isa = PBXGroup;
+			children = (
+				A6C271F2190BBD1B001D253E /* Additions */,
+				A6C2720D190BBD1B001D253E /* Models */,
+				A6C2721E190BBD1B001D253E /* Networking */,
+				A6C27223190BBD1B001D253E /* Resources */,
+				A6C27227190BBD1B001D253E /* ViewControllers */,
+				A6C271C9190BBC9B001D253E /* AppDelegate.h */,
+				A6C271CA190BBC9B001D253E /* AppDelegate.m */,
+				A6C271CC190BBC9B001D253E /* Main_iPhone.storyboard */,
+				A6C271CF190BBC9B001D253E /* Main_iPad.storyboard */,
+				A6C271D5190BBC9B001D253E /* Images.xcassets */,
+				A6C271C1190BBC9B001D253E /* Supporting Files */,
+			);
+			path = GoEuroTestTask;
+			sourceTree = "<group>";
+		};
+		A6C271C1190BBC9B001D253E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6C271C2190BBC9B001D253E /* GoEuroTestTask-Info.plist */,
+				A6C271C3190BBC9B001D253E /* InfoPlist.strings */,
+				A6C271C6190BBC9B001D253E /* main.m */,
+				A6C271C8190BBC9B001D253E /* GoEuroTestTask-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A6C271F2190BBD1B001D253E /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				A6C271F4190BBD1B001D253E /* CoreData */,
+				A6C271FA190BBD1B001D253E /* RKErrorMessage */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		A6C271F4190BBD1B001D253E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				A6C271F5190BBD1B001D253E /* NSManagedObjectContext+RestKit.h */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		A6C271FA190BBD1B001D253E /* RKErrorMessage */ = {
+			isa = PBXGroup;
+			children = (
+				A6C271FB190BBD1B001D253E /* RKErrorMessage+MappingDescriptor.h */,
+				A6C271FC190BBD1B001D253E /* RKErrorMessage+MappingDescriptor.m */,
+			);
+			path = RKErrorMessage;
+			sourceTree = "<group>";
+		};
+		A6C2720D190BBD1B001D253E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A6C2721C190BBD1B001D253E /* GoEuroModel.h */,
+				A6C2721D190BBD1B001D253E /* GoEuroModel.m */,
+				A6C2723E190BEC6C001D253E /* PersistentData.h */,
+				A6C2723F190BEC6C001D253E /* PersistentData.m */,
+				A6C27241190BEFD1001D253E /* Place.h */,
+				A6C27242190BEFD1001D253E /* Place.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A6C2721E190BBD1B001D253E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A6C2721F190BBD1B001D253E /* ConnectionManager+CoreData.h */,
+				A6C27220190BBD1B001D253E /* ConnectionManager+CoreData.m */,
+				A6C27221190BBD1B001D253E /* ConnectionManager.h */,
+				A6C27222190BBD1B001D253E /* ConnectionManager.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A6C27223190BBD1B001D253E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A6C27224190BBD1B001D253E /* Database */,
+				A6C2723D190BDC57001D253E /* Location.gpx */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A6C27224190BBD1B001D253E /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				A6C27225190BBD1B001D253E /* database.xcdatamodeld */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		A6C27227190BBD1B001D253E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A6C27239190BCE64001D253E /* SearchViewController.h */,
+				A6C2723A190BCE64001D253E /* SearchViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6C271B6190BBC9B001D253E /* GoEuroTestTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6C271EC190BBC9C001D253E /* Build configuration list for PBXNativeTarget "GoEuroTestTask" */;
+			buildPhases = (
+				F9128DBB7E524FEDBC629568 /* Check Pods Manifest.lock */,
+				A6C271B3190BBC9B001D253E /* Sources */,
+				A6C271B4190BBC9B001D253E /* Frameworks */,
+				A6C271B5190BBC9B001D253E /* Resources */,
+				17411E77253941048816156F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoEuroTestTask;
+			productName = GoEuroTestTask;
+			productReference = A6C271B7190BBC9B001D253E /* GoEuroTestTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6C271AF190BBC9B001D253E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Eugene Pavlyuk";
+			};
+			buildConfigurationList = A6C271B2190BBC9B001D253E /* Build configuration list for PBXProject "GoEuroTestTask" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A6C271AE190BBC9B001D253E;
+			productRefGroup = A6C271B8190BBC9B001D253E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6C271B6190BBC9B001D253E /* GoEuroTestTask */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6C271B5190BBC9B001D253E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6C271D1190BBC9B001D253E /* Main_iPad.storyboard in Resources */,
+				A6C271D6190BBC9B001D253E /* Images.xcassets in Resources */,
+				A6C271CE190BBC9B001D253E /* Main_iPhone.storyboard in Resources */,
+				A6C271C5190BBC9B001D253E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17411E77253941048816156F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9128DBB7E524FEDBC629568 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6C271B3190BBC9B001D253E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6C27237190BBD1B001D253E /* database.xcdatamodeld in Sources */,
+				A6C2723B190BCE64001D253E /* SearchViewController.m in Sources */,
+				A6C27234190BBD1B001D253E /* GoEuroModel.m in Sources */,
+				A6C27235190BBD1B001D253E /* ConnectionManager+CoreData.m in Sources */,
+				A6C27240190BEC6C001D253E /* PersistentData.m in Sources */,
+				A6C27243190BEFD1001D253E /* Place.m in Sources */,
+				A6C271CB190BBC9B001D253E /* AppDelegate.m in Sources */,
+				A6C27236190BBD1B001D253E /* ConnectionManager.m in Sources */,
+				A6C2722A190BBD1B001D253E /* RKErrorMessage+MappingDescriptor.m in Sources */,
+				A6C271C7190BBC9B001D253E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A6C271C3190BBC9B001D253E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6C271C4190BBC9B001D253E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A6C271CC190BBC9B001D253E /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6C271CD190BBC9B001D253E /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		A6C271CF190BBC9B001D253E /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6C271D0190BBC9B001D253E /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6C271EA190BBC9C001D253E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6C271EB190BBC9C001D253E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6C271ED190BBC9C001D253E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33EB4BA8BB4D4A139ADA0CDE /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GoEuroTestTask/GoEuroTestTask-Prefix.pch";
+				INFOPLIST_FILE = "GoEuroTestTask/GoEuroTestTask-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A6C271EE190BBC9C001D253E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33EB4BA8BB4D4A139ADA0CDE /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GoEuroTestTask/GoEuroTestTask-Prefix.pch";
+				INFOPLIST_FILE = "GoEuroTestTask/GoEuroTestTask-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6C271B2190BBC9B001D253E /* Build configuration list for PBXProject "GoEuroTestTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6C271EA190BBC9C001D253E /* Debug */,
+				A6C271EB190BBC9C001D253E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6C271EC190BBC9C001D253E /* Build configuration list for PBXNativeTarget "GoEuroTestTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6C271ED190BBC9C001D253E /* Debug */,
+				A6C271EE190BBC9C001D253E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A6C27225190BBD1B001D253E /* database.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A6C27226190BBD1B001D253E /* database.xcdatamodel */,
+			);
+			currentVersion = A6C27226190BBD1B001D253E /* database.xcdatamodel */;
+			path = database.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A6C271AF190BBC9B001D253E /* Project object */;
+}

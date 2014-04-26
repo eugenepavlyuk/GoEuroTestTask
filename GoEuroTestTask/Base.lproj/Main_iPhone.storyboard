@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Search View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="SearchViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="from place" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kau-dc-Cda" customClass="MLPAutoCompleteTextField">
+                                <rect key="frame" x="27" y="33" width="267" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="qqh-ED-F1J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="TQ2-Fc-ER4"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="to place" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Li-c8-fDD" customClass="MLPAutoCompleteTextField">
+                                <rect key="frame" x="27" y="95" width="267" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7v8-Hs-uA4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="gIQ-HG-9h6"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="date" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IeJ-iD-jQs">
+                                <rect key="frame" x="27" y="154" width="267" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="aD7-7Y-zlR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="Uzg-Nh-DG7"/>
+                                </connections>
+                            </textField>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sj4-nW-XIy" customClass="ABCalendarPicker">
+                                <rect key="frame" x="0.0" y="187" width="320" height="240"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="jxm-jE-4iT"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="240" id="n2Q-x0-vaB"/>
+                                    <constraint firstAttribute="width" constant="320" id="nUp-TL-IjZ"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ej9-Y7-Sqw">
+                                <rect key="frame" x="109" y="520" width="102" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="102" id="MEQ-4M-FAf"/>
+                                    <constraint firstAttribute="height" constant="30" id="eul-G4-Age"/>
+                                </constraints>
+                                <state key="normal" title="Search">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="searchButtonTapped" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oi6-fp-u1r"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3Li-c8-fDD" firstAttribute="top" secondItem="Kau-dc-Cda" secondAttribute="bottom" constant="32" id="0Ne-Tg-qbF"/>
+                            <constraint firstItem="Kau-dc-Cda" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="27" id="0cd-EC-ZfP"/>
+                            <constraint firstItem="sj4-nW-XIy" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="1BA-nO-QLv"/>
+                            <constraint firstItem="IeJ-iD-jQs" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="27" id="54k-ND-7bz"/>
+                            <constraint firstItem="sj4-nW-XIy" firstAttribute="top" secondItem="IeJ-iD-jQs" secondAttribute="bottom" constant="3" id="7lN-ki-MYQ"/>
+                            <constraint firstAttribute="trailing" secondItem="3Li-c8-fDD" secondAttribute="trailing" constant="26" id="Dtm-pr-txO"/>
+                            <constraint firstItem="Kau-dc-Cda" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="13" id="Gaq-hi-hVh"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Ej9-Y7-Sqw" secondAttribute="bottom" constant="18" id="JLq-N8-1UM"/>
+                            <constraint firstItem="3Li-c8-fDD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="27" id="LIA-8U-ZvJ"/>
+                            <constraint firstAttribute="centerX" secondItem="Ej9-Y7-Sqw" secondAttribute="centerX" id="SFa-vu-6vF"/>
+                            <constraint firstAttribute="trailing" secondItem="Kau-dc-Cda" secondAttribute="trailing" constant="26" id="TRi-MG-LA4"/>
+                            <constraint firstAttribute="trailing" secondItem="IeJ-iD-jQs" secondAttribute="trailing" constant="26" id="dQM-Qd-PHZ"/>
+                            <constraint firstAttribute="trailing" secondItem="sj4-nW-XIy" secondAttribute="trailing" id="dyH-0N-Tlb"/>
+                            <constraint firstItem="IeJ-iD-jQs" firstAttribute="top" secondItem="3Li-c8-fDD" secondAttribute="bottom" constant="29" id="lLs-Z8-osf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="calendarPicker" destination="sj4-nW-XIy" id="cqp-kE-3cb"/>
+                        <outlet property="dateTextField" destination="IeJ-iD-jQs" id="e7U-hr-ULL"/>
+                        <outlet property="fromTextField" destination="Kau-dc-Cda" id="nQB-2N-Gss"/>
+                        <outlet property="searchButton" destination="Ej9-Y7-Sqw" id="LUZ-TY-bEE"/>
+                        <outlet property="toTextField" destination="3Li-c8-fDD" id="OTh-FH-UVT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
